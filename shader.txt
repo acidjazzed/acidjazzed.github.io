@@ -1,0 +1,6 @@
+void directional(vec3 pos, vec3 colour) {
+vec3 normal = normalize (iNormalWorld);
+vec3 lightVector = normalize (pos);
+float nxDir = max (0.0, dot (normal, lightVector ));
+diffuseLight += colour * nxDir * 0.01;
+}
