@@ -6,7 +6,7 @@ newmtl _4
 Ka 0.000000 0.000000 0.000000
 Kd 0.415686 0.415686 0.415686
 Ks 0.330000 0.330000 0.330000
-map_Kd sign/_4.jpg
+map_Kd ../models/textures/signtexture.jpg
 
 newmtl BackColor
 Ka 0.000000 0.000000 0.000000
@@ -17,7 +17,7 @@ newmtl _3
 Ka 0.000000 0.000000 0.000000
 Kd 0.803922 0.792157 0.756863
 Ks 0.330000 0.330000 0.330000
-map_Kd sign/_3.jpg
+map_Kd ../models/textures/signtexture.jpg
 
 newmtl FrontColor
 Ka 0.000000 0.000000 0.000000
