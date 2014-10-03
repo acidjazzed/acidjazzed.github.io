@@ -1,36 +1,10 @@
-var global_clicks_val = 0;
+//fler exempel på hur man kan använda jagascript finns i janusfoldern på din dator och mappen workspace/experiment
+// obs att objekten som man manipulerar med javascript behöver, js id. tex: js_id="platform"
+
 var global_update_val = 0;
 var global_time_passed = 0;
 
 room.onLoad = function() {
-
-for (var i=0; i<5; ++i) {
-
-	var textid = "new_text"+i;
-
-	room.createObject("Text", {js_id:textid});
-
-	room.objects[textid].pos = Vector(-10+i,1+i,15);
-        room.objects[textid].fwd = Vector(-1,0,0);
-        room.objects[textid].text = "This is new text with js_id: " + room.objects[textid].js_id;
-        room.objects[textid].scale = Vector(5,5,5);
-        room.objects[textid].col = Vector(.5,1,.5);
-        }
-
-	room.objects["new_text0"].text = "Clicks: 0";
-        room.objects["new_text0"].col = Vector(1,0,0);
-
-}
-
-room.onClick = function() {
-
-	global_clicks_val++;
-
-	room.objects["new_text0"].text = "Clicks: " + global_clicks_val;	
-
-	//room.objects["megaman"].pos = player.cursor_pos;
-
-}
 
 room.update = function(delta_time) {
 
@@ -41,14 +15,13 @@ room.update = function(delta_time) {
      var sin_secs = Math.sin(secs_passed);
      var sin_secs2 = Math.sin(secs_passed * 3.14159 * 2);
 
-	room.objects["new_text1"].text = "Calls to update(): " + global_update_val;
-        room.objects["new_text1"].pos.y = 1.5 + 0.25*sin_secs;
-        room.objects["new_text2"].text = "Time passed (msec): " + global_time_passed;
-        room.objects["new_text2"].col = Vector(0,0,0.5 + 0.5 * sin_secs2);
-        room.objects["new_text2"].col = Vector(0,0,0.5 + 0.5 * sin_secs2);
-        room.objects["new_text3"].text = "player.cursor_pos: " + player.cursor_pos;
 
-	//this causes the image to always face the player
-        room.objects["megaman"].fwd = player.view_dir;
+		room.objects["heli"].pos.y = 10 + 5 * sin_secs;
 
+		
+		room.objects["car1"].pos.z = 5 + 5 * sin_secs;
+		room.objects["car2"].pos.z = 25 + 10 * sin_secs;
+
+
+}
 }
