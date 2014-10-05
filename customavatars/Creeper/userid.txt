@@ -1,0 +1,11 @@
+
+
+<FireBoxRoom>
+<Assets>
+<AssetObject id="head" src="http://acidjazzed.github.io/customavatars/Creeper/creeperhead.obj" mtl="http://acidjazzed.github.io/customavatars/Creeper/creeperhead.mtl" />
+<AssetObject id="body" src="http://acidjazzed.github.io/customavatars/Creeper/creeperbody.obj" mtl="http://acidjazzed.github.io/customavatars/Creeper/creeperbody.mtl" />
+</Assets>
+<Room>
+<Ghost id="Alexander" head_id="head" head_pos="0.000 1.50 0.000" body_id="creeperbody" scale="1 1 1" col="1 1 1" cull_face="none" />
+</Room>
+</FireBoxRoom>
