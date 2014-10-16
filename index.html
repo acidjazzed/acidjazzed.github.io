@@ -40,6 +40,7 @@ MODELS
 Decorations
 <AssetObject id="fountain" src="models/fountain/fountain.obj" mtl="models/fountain/fountain.mtl" />
 <AssetObject id="bench" src="models/decorations/bench.obj" mtl="models/decorations/bench.mtl" />
+<AssetObject id="mailbox" src="models/decorations/mailbox.obj" mtl="models/decorations/mailbox.mtl" />
 
 Roads
 <AssetObject id="road1" src="models/road-straight-house-1-low.obj" mtl="models/road-straight-house-1-low.mtl" />
@@ -79,9 +80,11 @@ Greens
 
 Signs
 <AssetObject id="sign" src="models/sign.obj" mtl="models/sign.mtl" />
-<AssetImage id="counter" src="http://s10.flagcounter.com/count/ewYR/bg_96FF1F/txt_000000/border_45CC65/columns_2/maxflags_12/viewers_Island+visitors/labels_0/pageviews_0/flags_0" />
+<AssetImage id="counter" src="http://s10.flagcounter.com/count/ewYR/bg_96FF1F/txt_000000/border_45CC65/columns_3/maxflags_18/viewers_Island+visitors/labels_0/pageviews_0/flags_0" />
 <AssetObject id="welcome" src="models/WelcomeSign.obj" mtl="models/WelcomeSign.mtl" />
 <AssetObject id="madebysign" src="models/madebysign/madebysign.obj" mtl="models/madebysign/madebysign.mtl" />
+<AssetObject id="homesign" src="models/decorations/homesign.obj" mtl="models/decorations/homesign.mtl" />
+
 
 
 
@@ -101,14 +104,25 @@ Every Row is pos +16
 
 
 Signs
-<Image id="counter" pos="-10 1.7 9.2" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1.75 1.75 1"/>
+<Object id="sign" collision_id="sign" lighting="true"  shader_id="shader_id" locked="true" pos="-18 0 21.8" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1.6 1.6 1.6" />
+<Image id="counter" pos="-20.5 1.7 22.7" xdir="1 0 0" ydir="0 1 0" zdir="0 0 -1" scale="1.75 1.75 1"/>
 <Object id="welcome" collision_id="WelcomeSign" js_id="welcome" lighting="true"  shader_id="shader_id" locked="true" pos="-32 -4 16.5" xdir="1 0 0" ydir="0 1 0" zdir="1 0 0" scale="1.2 1.2 1.2" />
 <Object id="madebysign" collision_id="madebysign" js_id="madebysign" lighting="true"  shader_id="shader_id" locked="true" pos="25 0 25" xdir="1 0 0" ydir="0 1 0" zdir="-1 0 0" scale="0.8 0.8 0.8" />
+<Object id="homesign" collision_id="homesign" lighting="true"  shader_id="shader_id" locked="true" pos="-15.6 -0.65 6" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" />
+
 
 Decorations
 <Object id="fountain" collision_id="fountain" js_id="fountain" lighting="true"  shader_id="shader_id" locked="true" pos="9 -0.3 7" xdir="1 0 0" ydir="0 1 0" zdir="-1 0 0" scale="0.7 0.7 0.7" />
 <Object id="bench" collision_id="bench" js_id="bench" lighting="true"  shader_id="shader_id" locked="true" pos="5 0 7" xdir="1 0 0" ydir="0 1 0" zdir="1 0 0" scale="1 1 1" />
 <Object id="bench" collision_id="bench" js_id="bench" lighting="true"  shader_id="shader_id" locked="true" pos="9 0 3" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" />
+
+<Object id="mailbox" collision_id="mailbox" js_id="mailbox" lighting="true"  shader_id="shader_id" locked="true" pos="-15 0 9.2" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="0.6 0.6 0.6" />
+<Object id="mailbox" collision_id="mailbox" js_id="mailbox" lighting="true"  shader_id="shader_id" locked="true" pos="-16.2 0 22.7" xdir="1 0 0" ydir="0 1 0" zdir="0 0 -1" scale="0.6 0.6 0.6" />
+<Object id="mailbox" collision_id="mailbox" js_id="mailbox" lighting="true"  shader_id="shader_id" locked="true" pos="-31 0 22.7" xdir="1 0 0" ydir="0 1 0" zdir="0 0 -1" scale="0.6 0.6 0.6" />
+<Object id="mailbox" collision_id="mailbox" js_id="mailbox" lighting="true"  shader_id="shader_id" locked="true" pos="0 0 22.7" xdir="1 0 0" ydir="0 1 0" zdir="0 0 -1" scale="0.6 0.6 0.6" />
+
+
+
 
 
 Sky
@@ -185,7 +199,6 @@ Row 2
 
 <Object id="palm" collision_id="palm" lighting="true"  shader_id="shader_id" locked="true" pos="-7 0 25" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="2 2 2" />
 
-<Object id="sign" collision_id="sign" lighting="true"  shader_id="shader_id" locked="true" pos="-8 0 8" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1.5 1.5 1.5" />
 
 
 <Object id="car" collision_id="car" lighting="true" js_id="car1"  shader_id="shader_id" locked="true" pos="17 0 19" xdir="1 0 0" ydir="0 1 0" zdir="0 0 1" scale="1 1 1" />
